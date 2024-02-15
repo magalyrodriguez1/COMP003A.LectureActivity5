@@ -32,7 +32,7 @@ namespace COMP003A.LectureActivity5
             decimal inputNumber2 = Convert.ToDecimal(Console.ReadLine());
 
             //call to Sum (decimal num1, decimalnum2) and storing the return value in a variable
-            decimal sum = AddingNewEventArgs(inputNumber1, inputNumber2);
+            decimal sum = Add(inputNumber1, inputNumber2);
             Console.WriteLine($"Summation: {sum}"); //output the value of sum to console
 
             //if you don't plan on using a variable, you can simplify the method call like the lines below
@@ -115,7 +115,16 @@ namespace COMP003A.LectureActivity5
             return num1 - num2;
         }
 
-        
+        ///<summary>
+        ///Method for multiplying two numeric variables
+        ///</summary> 
+        ///<param name="num1">Decimal input</param>
+        ///<param name="num2">Decimal input</param>
+        ///<returns>Product of two decimal inputs</returns>
+        static decimal Multiply(decimal num1, decimal num2)
+        {
+            return num1 * num2;
+        }
 
 
     }
