@@ -126,6 +126,16 @@ namespace COMP003A.LectureActivity5
             return num1 * num2;
         }
 
+        ///<summary>
+        ///Method for dividing two numeric variables
+        ///</summary>
+        ///<param name="num1">Decimal input</param>
+        ///<param name="num2">Decimal input</param>
+        ///<returns>Quotient of two decimal inputs</returns>
+        static decimal Divide(decimal num1, decimal num2)
+        {
+            return num1 / num2;
+        }
 
     }
 }
