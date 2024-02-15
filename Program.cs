@@ -147,5 +147,17 @@ namespace COMP003A.LectureActivity5
         {
             return num1 % num2;
         }
+
+        ///<summary>
+        ///Recursive method
+        ///</summary>
+        ///<param name="message">String input to print to console</param>
+        ///<param name="counter">Integer input used as a looping counter</param>
+        static void Inception(string message, int counter)
+        {
+            Console.WriteLine($"{message} {counter}");
+            counter--;
+            if (counter >= 0) Inception(message, counter--);
+        }
     }
 }
